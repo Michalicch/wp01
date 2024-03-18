@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.header {
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.menu__item a {
+  margin-right: 43px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #989696;
+}
+.menu__item:last-child a {
+  margin-right: 0;
+}
+.active a {
+  color: #010101;
+}
+.logo {
+  margin: 0 16px;
+}
+
+.header__content {
+  text-align: center;
+}
+.header__title {
+  margin: 207px auto 4px;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 44px;
+  line-height: 41px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+}
+.header__text {
+  margin: 0 auto 43px auto;
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #898888;
+}
+.header__button {
+  width: 188px;
+  height: 57px;
+  margin: 0 auto 206px;
+  /* padding:  25px 52px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+/* О нас */
+.about {
+  height: 1129px;
+  padding-top: 128px;
+  padding-bottom: 271px;
+  background: url(../img/city_wheit.png) center 101% repeat-x,
+    url(../img/city_black.png) center 101% repeat-x, #1d1d1d;
+  /* background-size: contain, contain; */
+}
+.about__inner {
+  padding: 0 auto;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: max-content max-content;
+  grid-gap: 178px;
+  place-content: center center;
+}
+.about__item {
+  width: 417px;
+  height: 276px;
+  padding: 0 10px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about__year {
+  margin-bottom: 27px;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+}
+.about__text {
+  margin-bottom: 27px;
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #b7b7b7;
+  text-align: center;
+}
+
+/* Team / Команда */
+
+.team {
+  height: 745px;
+  padding-top: 138px;
+}
+.block__head {
+  text-align: center;
+}
+.block__title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  margin: 0;
+}
+.block__text {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+  margin: 0;
+}
+.team__inner {
+  padding-top: 127px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.team__item {
+  text-align: center;
+}
+.team__item-img {
+  margin-bottom: 25px;
+}
+.team__item-title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #464646;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.team__item-text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #b3b3b3;
+  margin: 0;
+  margin-bottom: 21px;
+}
+.team__icon-box a {
+  font-size: 20px;
+  color: #e4e4e4;
+  transition: 0.2s;
+}
+.team__icon-box a:hover {
+  color: #949494;
+}
+
+/* Услуги */
+
+.provide {
+  padding-bottom: 155px;
+  background-color: #181818;
+}
+.container {
+}
+.block__head {
+}
+
+.inverse .block__title {
+  padding-top: 176px;
+  color: #ffffff;
+}
+.inverse .block__text {
+  color: #777777;
+}
+.provide__inner {
+  padding-top: 138px;
+  display: flex;
+  justify-content: space-between;
+}
+.provide__item {
+  max-width: 335px;
+  text-align: center;
+}
+.provide__item i {
+  width: 172px;
+  height: 172px;
+  margin: 0 auto 43px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-chart-line {
+}
+.provide__item-title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 31px;
+}
+.provide__item-text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #383838;
+  margin: 0;
+}
+
+/* Contact */
+
+.contact {
+}
+.container {
+}
+.block__head {
+  padding-top: 95px;
+}
+.block__title {
+}
+.block__text {
+}
+.contact__inner {
+}
+.contact__icon-box {
+  max-width: 570px;
+  margin: 0 auto;
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__item {
+  width: 130px;
+  text-align: center;
+}
+.contact__item i {
+  color: #323232;
+  font-size: 21px;
+}
+.icon-phone {
+}
+.contact__text a {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  transition: 0.3s;
+}
+.contact__text a:hover {
+  color: #4b4b4b;
+  text-decoration: underline;
+}
+.icon-location {
+}
+.icon-mail-alt {
+}
+.contact__form {
+  max-width: 770px;
+  margin: 0 auto;
+  padding-top: 153px;
+  display: flex;
+  flex-direction: column;
+}
+.contact__name,
+.contact__email,
+.contact__number {
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  text-align: center;
+  border: 1px solid #999999;
+}
+/* Убираем стрелки в input number  */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.contact__textarea {
+  margin-top: 18px;
+  height: 195px;
+  padding: 22px;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  border: 1px solid #999999;
+  resize: none;
+}
+
+.contact__button {
+  margin-top: 21px;
+  padding: 20px 0 18px 0;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+  background-color: #161616;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 154px;
+  padding-bottom: 29px;
+  text-align: center;
+}
+.footer__text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #3b3b3b;
+}
+
+.header {
+  /* display: none; */
+}
+.about {
+  /* display: none; */
+}
+.team {
+  /* display: none; */
+}
+.provide {
+  /* display: none; */
+}
+
+/* media */
+
+@media screen and (max-width: 769px){
+  body{
+    background-color: green;
+  }
+}
